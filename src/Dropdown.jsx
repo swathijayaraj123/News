@@ -10,7 +10,7 @@ const Dropdown = ({setcountry}) => {
         </button>
       
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        {countriesList.map((place,index)=>{
+        {countriesList?.map((place,index)=>{
             return( <div key={index}className='dropdown-item' onClick={()=>{
                 setSelectCountry(place.country)
                 setcountry(place.code)
